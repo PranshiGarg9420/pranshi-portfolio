@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranshi Garg | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <h1><span class="highlight">Pranshi</span> Garg</h1>
+            <p>Web Developer</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p class="progress-text" id="progress-text">0%</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Pranshi</a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="mobile-nav-toggle" id="mobile-nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi 👋, I'm <span class="highlight">Pranshi Garg</span></h1>
+                    <h2>I'm a &nbsp;<span id="typing-text"></span><span class="cursor">|</span></h2>
+                    <p>I am a passionate web developer with a goal to build applications that are not only visually appealing but 
+                        also provide exceptional user experiences. I love solving complex problems 
+                        and continuously learning new technologies to improve my skills.</p>
+                    <div class="hero-buttons">
+                        <a href="MY_RESUME.pdf" download="Resume" class="btn btn-primary">Resume<i class="fas fa-download"></i></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/PranshiGarg9420" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pranshi-garg-75172932b" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="img/profile_pic.png" alt="Pranshi Garg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Educational Qualifications</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image fade-in-left">
+                    <img src="img/profile_pic.png" alt="About Me">
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2024 - 2028</span>
+                        <div class="content">
+                            <h3>Vellore Institute of Technology, Vellore</h3>
+                            <h2>Bachelor of Technology in Computer Science</h2>
+                            <p>Currently pursuing a Bachelor of Technology in Computer Science (Specialization - Information Security) at Vellore Institute of Technology, with a strong focus on building coding skills and more.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2022 - 2024</span>
+                        <div class="content">
+                            <h3>National Public School, Narela</h3>
+                            <h2>Non - Medical (PCM)</h2>
+                            <p>Completed Class XII in the Non-Medical stream from National Public School, Narela, in 2024, achieving a commendable score of 91.60%, laying a strong foundation for my academic journey.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2021 - 2022</span>
+                        <div class="content">
+                            <h3>Prayaag International School, Panipat</h3>
+                            <h2>Class X, CBSE </h2>
+                            <p>Completed Class X from Prayaag International School in 2022 with an outstanding score of 98.60%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="section-divider"></div>
+                <p>I have worked with a variety of technologies and tools in web development. Here are the main areas I have worked on:</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">EJS</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FIrebase</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Version Control</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Other</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Debugging & Code Optimization</span>
+                        <span class="skill-tag">Responsive Web Design</span>
+                        <span class="skill-tag">Authentication & Authorization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="section-divider"></div>
+                <p>Here are some of my projects. <br>Each project was built with a focus on performance, accessibility, and user experience.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="img/Travigo.png" alt="Travel Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>Travel Website</h3>
+                        <p>Travigo simplifies trip planning with a smart travel calendar, fun trivia quizzes, and curated destination guides. Discover India’s top hill stations, budget-friendly travel spots, and five major cities. Stay updated with expert insights, connect with a vibrant travel community, and explore stunning locations effortlessly. Plan, explore, and experience hassle-free adventures with Travigo!✈️</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PranshiGarg9420/TRAVIGO" class="btn btn-sm btn-outline"><i class="fab fa-github"></i><pre> Code</pre></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="img/wardmate.png" alt="Wardrobe Organizer App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Wardrobe Organizer App</h3>
+                        <p>WardMate helps users pick the perfect outfit based on occasion, temperature, and time. It keeps fashion lovers updated with top fashion blogs and trending Indian, Western, and formal styles. Designed for today’s youth, WardMate ensures effortless style, seamless fashion choices, and a personalized wardrobe experience. 👗👔</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstarp</span>
+                            <span class="project-tag">Javascript</span>
+                            <span class="project-tag">Material UI</span>
+                            <span class="project-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1mn266U_uB26SAy982wQQCRGtaDtAR1qY/view" class="btn btn-sm btn-outline"><i class="fab fa-github"></i><pre> Code</pre></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="img/discord_bot.png" alt="Discord Bot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Discord Bot</h3>
+                        <p>A feature-rich bot designed to make your server interactive, fun, and efficient! From chatting with AI to managing reminders, creating polls, playing music, and even summarizing long texts—this bot does it all🚀</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">API Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PranshiGarg01/Gemini_Discord_Boat" class="btn btn-sm btn-outline"><i class="fab fa-github"></i><pre> Code</pre></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="projects section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Achievements</h2>
+                <div class="section-divider"></div>
+                <p>Here are some of my notable achievements. Each certification reflects my dedication to coding, problem-solving and continuous learning.</p>
+            </div>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div class="slide slide_1">
+                            <div class="slide-content">
+                               <img class="slide-image" src="img/c3.png" alt="slide1">
+                            </div>
+                         </div>
+                         <div class="slide slide_2">
+                            <div class="slide-content">
+                                <img class="slide-image" src="img/c1.png" alt="slide1">
+                            </div>
+                         </div>
+                         <div class="slide slide_3">
+                            <div class="slide-content">
+                                <img class="slide-image" src="img/c2.png" alt="slide1">
+                            </div>
+                         </div>
+                         <div class="slide slide_4">
+                            <div class="slide-content">
+                                <img class="slide-image" src="img/c4.jpg" alt="slide1">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div id="controls">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div>
+                <div id="bullets">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p>Have a project in mind or want to collaborate? <br>Feel free to reach out to me using the form below.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Email</h4>
+                                <a href="mailto:contact@example.com">pranshi.garg2024@vitstudent.ac.in</a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+11234567890">+91 93061-87909</a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Location</h4>
+                                <a href="https://maps.app.goo.gl/CUDiqfi9r9dt4DJR7" target="_blank">VIT, Tamil Nadu, India</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <h3>Send Me a Message</h3>
+                        <div id="form-success" class="form-success">
+                            Your message has been sent successfully!
+                        </div>
+                        <form id="contact-form" class="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbxPFvQQJBIWIvtz7txdNa-93B-2NRMAHT7X2fMRFRzUq3DcPN2xz8nM6gVeoRwjirlE/exec">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn" value="submit">
+                                <i class="fas fa-paper-plane"></i> <pre> Send Message</pre>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#home" class="footer-logo">Pranshi</a>
+                    <p>Web developer focused on creating clean, <br>user-friendly interfaces that solve real problems.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="https://github.com/PranshiGarg9420" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pranshi-garg-75172932b" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="copyright">© <span id="current-year"></span> Pranshi Garg. All rights reserved.</p>
+                    <p class="made-with">Made with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <!-- Linker Swiper Script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
